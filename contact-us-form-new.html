@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <style>
+        body {
+            background-color: aqua;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color:#333333
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+            width: 600;
+            height: 400;
+        } 
+        form {
+            align: center;
+        }
+        #Welcome {
+background-color: #333333;
+color: #eee;
+font-size: 28px;
+text-align: center;
+padding-left: 15%;
+padding-right: 50%;
+padding-left: 400px;
+padding-right: 500px;
+padding-top: 8px;
+padding-bottom: 8px;
+width: 1024px;
+}
+p {
+    margin-bottom: 100px;
+    margin-top: 200px;
+    margin-left: 300px;
+    color: rgb(157, 74, 88)
+}
+    </style>
+</head>
+<body>
+   <form>
+    <h1 id="Welcome">Welcome</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="email">
+    <label for="email">Email:</label>
+<input type="email" id="email" name="email">
+<label for="message">Message:</label>
+<textarea id="message" name="message"></textarea>
+<input type="submit" value="Send">
+<form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="apikey" value="273ab71c-a483-4387-8c68-11ad62f83a89">
+    <button type="submit">Submit Form</button>
+   </form> 
+   <script src="https://web3forms.com/client/script.js" async defer></script>
+   <p>Thank you for visiting this page!</p>
+</body>
+</html>
