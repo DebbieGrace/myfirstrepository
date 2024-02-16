@@ -6,47 +6,46 @@
     <title>Contact Us Form</title>
     <style>
         body {
-            background-color: aqua;
+            background-color: rgb(55, 123, 135);
             font-family:Georgia, 'Times New Roman', Times, serif;
-            color:#333333
-            margin: 0;
-            padding: 0;
-            font-size: 24px;
-            width: 600;
-            height: 400;
+    color:#333333
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
         } 
         form {
             align: center;
         }
-        #Welcome {
-background-color: #333333;
-color: #eee;
-font-size: 28px;
-text-align: center;
-padding-left: 15%;
-padding-right: 50%;
-padding-left: 400px;
-padding-right: 500px;
-padding-top: 8px;
-padding-bottom: 8px;
-width: 1024px;
-}
 p {
     margin-bottom: 100px;
     margin-top: 200px;
     margin-left: 300px;
-    color: rgb(157, 74, 88)
+    color: white;
 }
+
+#Welcome {
+background-color: #333333;
+color: #eee;
+font-size: 40px;
+text-align: center;
+padding-left: 200px;
+padding-right: 600px;
+padding-top: 8px;
+padding-bottom: 8px;
+width: 1024px;
+margin-bottom: 60px;
+}
+
     </style>
 </head>
 <body>
    <form>
-    <h1 id="Welcome">Welcome</h1>
-    <label for="name">Name:</label>
+    <header id="Welcome">Welcome</header>
+    <label for="name" style="color: white;">Name:</label>
     <input type="text" id="name" name="email">
-    <label for="email">Email:</label>
+    <label for="email" style="color: white;">Email:</label>
 <input type="email" id="email" name="email">
-<label for="message">Message:</label>
+<label for="message" style="color: white;">Message:</label>
 <textarea id="message" name="message"></textarea>
 <input type="submit" value="Send">
 <form action="https://api.web3forms.com/submit" method="POST">
